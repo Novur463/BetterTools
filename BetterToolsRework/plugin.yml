@@ -1,0 +1,20 @@
+name: BetterTools
+main: com.novur.bettertools.BetterTools
+api-version: 1.15
+version: 0.1-PRE
+author: Novur
+depend:
+  - WorldEdit
+  - WorldGuard
+  - TokenManager
+  - NBTAPI
+
+commands:
+  bettertools:
+    description: Base BetterTools command.
+
+permissions:
+  bettertools.give:
+    description: Permission to give a BetterTool tool!
+  bettertools.reload:
+    description: Permission to reload BetterTools!

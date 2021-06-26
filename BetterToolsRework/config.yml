@@ -1,0 +1,193 @@
+items:
+  smelter:
+    material: 'DIAMOND_PICKAXE'
+    name: '&bSmelters Pickaxe'
+    lore:
+      - '&c&oInstantly smelts your ores!'
+    unbreakable: true
+  block:
+    material: 'DIAMOND_PICKAXE'
+    name: '&bBlock Pickaxe'
+    lore:
+      - '&c&oTurns ores into their block variants!'
+    unbreakable: true
+  bountiful:
+    material: 'DIAMOND_PICKAXE'
+    name: '&bBountiful Pickaxe'
+    lore:
+      - '&c&oDrops the ores from others nearby!'
+    unbreakable: true
+  explosive:
+    material: 'DIAMOND_PICKAXE'
+    name: '&bExplosive Pickaxe'
+    lore:
+      - '&c&oExplodes blocks on contact!'
+    unbreakable: true
+  laser:
+    material: 'DIAMOND_PICKAXE'
+    name: '&bLaser Pickaxe'
+    lore:
+      - '&c&oMines in the direction you''re facing!'
+    unbreakable: true
+    laser:
+      range: 5
+  lumberjack:
+    material: 'DIAMOND_AXE'
+    name: '&bLumberjack Axe'
+    lore:
+      - '&c&oVein mines logs nearby!'
+    unbreakable: true
+    verticalHeight: 10
+
+fortune:
+  - 'COAL_ORE'
+  - 'LAPIS_ORE'
+  - 'REDSTONE_ORE'
+  - 'EMERALD_ORE'
+  - 'DIAMOND_ORE'
+  - 'NETHER_QUARTZ_ORE'
+
+sounds:
+  smelter:
+    play: true
+    sound: 'ENTITY_BLAZE_HURT'
+    volume: 1
+    pitch: 1
+  block:
+    play: true
+    sound: 'ENTITY_PLAYER_LEVELUP'
+    volume: 1
+    pitch: 1
+  bountiful:
+    play: true
+    sound: 'BLOCK_NOTE_BLOCK_PLING'
+    volume: 1
+    pitch: 2
+  explosive:
+    play: true
+    sound: 'ENTITY_DRAGON_FIREBALL_EXPLODE'
+    volume: 1
+    pitch: 1.2
+  laser:
+    play: true
+    sound: 'ENTITY_BLAZE_DEATH'
+    volume: 1
+    pitch: 2
+  lumberjack:
+    play: false
+    sound: 'BLOCK_ANVIL_BREAK'
+    volume: 1
+    pitch: 2
+
+effect:
+  smelter:
+    play: false
+    effect: ''
+  block:
+    play: false
+    effect: ''
+  bountiful:
+    play: false
+    effect: ''
+  explosive:
+    play: true
+    effect: 'SMOKE'
+  laser:
+    play: false
+    effect: ''
+  lumberjack:
+    play: false
+    effect: ''
+
+regions:
+  mine:
+    - 'emine'
+    - 'dmine'
+    - 'cmine'
+    - 'bmine'
+    - 'amine1'
+    - 'amine2'
+    - 'amine3'
+    - 'amine4'
+    - 'sergeantmine'
+    - 'lieutenantmine'
+    - 'captainmine'
+    - 'majormine'
+    - 'operationsmine1'
+    - 'operationsmine2'
+    - 'operationsmine3'
+    - 'operationsmine4'
+    - 'wardenmine'
+  log:
+    - 'ewood'
+
+gems:
+  min: 1
+  max: 5
+  chance: 1.0
+  multiplier:
+    explosive: 1.0
+    laser: 2.5
+
+inventoryFull:
+  dropItemAtFeet: true
+
+messages:
+  inventory:
+    invWarning:
+      - '&4&lWARNING     &6BetterTools    &4&lWARNING'
+      - '&7Your inventory full, so your BetterTools Tool was dropped at your feet!'
+  command:
+    invalidCommand: '&4&lError! &cInvalid format! /bettertools help'
+    noPermission: '&4&lError! &cYou do not have permission to perform this command!'
+    playerNotFound: '&4&lError! &cTarget player &c&l{target} &ccould not be found!'
+    invalidItem: '&4&lError! &cThis item is not a valid BetterTool!'
+    validatedItem: '&8&l>>  &7This item is a &6{tool}&7!'
+    pluginReloaded: '&8>>  &aBetterTools reloaded.'
+    mustBePlayer: '&4&lError! &cYou must be a player to perform this command!'
+    invalidTool: '&4&lError! &cThis is not a recognised BetterTool!'
+    invalidFormatGive: '&4&lError! &cInvalid format: /bettertools give <player> <tool>'
+    targetInventoryFull: '&4&lError! &cYour inventory is currently full, so you could not receive a &a{tool}&c!'
+    toolGiven: '&a&lSuccess! &aYou gave &b{target} &aa &b{tool}&a!'
+    toolReceived: '&a&lSuccess! &aYou received a &b{tool}&a!'
+    invalidInfoCommand: '&4&lError! &cInvalid &4&linfo &csubcommand! Recognised stubs: <regions | aliases>'
+  regions:
+    - '&7&m             &6 BetterTools  Regions&7&m             '
+    - '&6Mine regions:'
+    - '&7{mineRegions}'
+    - ''
+    - ''
+    - '&6Wood regions:'
+    - '&7{woodRegions}'
+    - ''
+  aliases:
+    - ''
+    - '&7&m             &6 Tool Aliases&7&m             '
+    - ''
+    - '&6lj&7, &6lumberaxe&7, &6lumberjack&7, &6lumberjackaxe&7: Lumberjack Axe'
+    - '&6laser&7, &6laserpick&7, &6laserpickaxe&7: Laser Pickaxe'
+    - '&6block&7, &6blockpick&7, &6blockpickaxe&7: Block Pickaxe'
+    - '&6explosive&7, &6explosivepick&7, &6explosivepickaxe&7: Explosive Pickaxe'
+    - '&6bountiful&7, &6bountifulpick&7, &6bountifulpickaxe&7: Bountiful Pickaxe'
+    - '&6smelters&7, &6smelterspick&7, &6smelterspickaxe&7: Smelters Pickaxe'
+    - ''
+  help:
+    - '&7&m             &6 BetterTools &7&m             '
+    - '&6Commands:'
+    - '&6/bettertools give <player> <tool> &7- Give a player a BetterTools item!'
+    - '&6/bettertools info <regions | aliases | gems> &7- Displays this help menu!'
+    - '&6/bettertools reload &7- Reload plugin config'
+  gems:
+    help:
+      - ''
+      - '&7&m             &aGems &7&m             '
+      - ''
+      - '&6Minimum gems&7: {minimumGems}'
+      - '&6Maximum gems&7: {maximumGems}'
+      - ''
+      - '&6&lChances'
+      - '   &6Base chance&7: {gemChance}'
+      - '   &6Explosive chance multiplier&7: {explosiveMultiplier}'
+      - '   &6Laser chance multiplier&7: {laserExplosiveMultiplier}'
+      - ''
+    gemsAwarded: '&aYou have received {gems} gems!'
